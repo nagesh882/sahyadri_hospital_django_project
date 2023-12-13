@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'body' %}
+
+<script src="{% static 'jack.js' %}"></script>
+<!-- ======= Hero Section ======= -->
+<section id="" class="d-flex align-items-center">
+  <div class="container">
+    <!-- <h1>Welcome to Bridge of <br> Hope Hospital</h1>
+      <h2>“A hero is someone who has given his or her life to something bigger than oneself.”</h2>
+      <a href="appoinment.html" class="btn-get-started scrollto">Make an Appointment</a> -->
+  </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+
+  <!-- ======= Appointment Section ======= -->
+  <section id="appointment" class="appointment section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Make an Appointment</h2>
+        <p>We are providing excellent care of patients, having experienced doctors to treat best treatment to our
+          patients, and offering advanced medical technologies often attract patients seeking the best treatment.</p>
+      </div>
+
+      <!-- <form action="forms/appointment.php" method="post" role="form" class="php-email-form"> -->
+      <div class="row">
+        <div class="col-md-4 form-group">
+          <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First Name"
+            data-rule="minlen:4" data-msg="Please enter at least 4 chars"><br>
+          <span id="span1" style="color: green;"></span>
+          <div class="validate"></div>
+        </div>
+        <div class="col-md-4 form-group">
+          <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last Name"
+            data-rule="minlen:4" data-msg="Please enter at least 4 chars"><br>
+          <span id="span2" style="color: green;"></span>
+          <div class="validate"></div>
+        </div>
+        <div class="col-md-4 form-group mt-3 mt-md-0">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
+            data-msg="Please enter a valid email"><br>
+          <span id="span3" style="color: green;"></span>
+          <div class="validate"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 form-group mt-3">
+          <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4"
+            data-msg="Please enter at least 4 chars"><br>
+          <span id="span4" style="color: green;"></span>
+          <div class="validate"></div>
+        </div>
+        <div class="col-md-4 form-group mt-3">
+          <input type="date" name="date" class="form-control datepicker" id="date" value="Appointment Date"
+            data-rule="minlen:4" data-msg="Please enter at least 4 chars"><br>
+          <span id="span5" style="color: green;"></span>
+          <div class="validate"></div>
+        </div>
+        <div class="col-md-4 form-group mt-3">
+          <input type="time" name="time" class="form-control datepicker" id="time" placeholder="Appointment Time"
+            data-rule="minlen:4" data-msg="Please enter at least 4 chars"><br>
+          <span id="span6" style="color: green;"></span>
+          <div class="validate"></div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-4 form-group mt-3">
+          <select name="department" id="gender" class="form-select">
+            <option value="">Select Gender</option>
+            <option value="Department 1">Male</option>
+            <option value="Department 2">Female
+            </option>
+          </select>
+          <br>
+          <span id="span7" style="color: green;"></span>
+          <div class="validate"></div>
+        </div>
+        <div class="col-md-4 form-group mt-3">
+          <select name="department" id="treatment" class="form-select">
+            <option value="">Select Treatment</option>
+            <option value="Department 1">Dental</option>
+            <option value="Department 2">Cardiology
+            </option>
+            <option value="Department 3">Diagnosis</option>
+          </select><br>
+          <span id="span8" style="color: green;"></span>
+          <div class="validate"></div>
+        </div>
+        <div class="col-md-4 form-group mt-3">
+          <select name="doctor" id="doctor" class="form-select">
+            <option value="">Select Doctor</option>
+            <option value="Doctor 1">Dr. Abhijit S. Mhaske <small>(Dental)</small></option>
+            <option value="Doctor 2">Dr. Pankaja V. Deshpande <small>(Cardiology)</small></option>
+            <option value="Doctor 3">Dr. Agues Robin <small>(Neurosurgeon)</small></option>
+            <option value="Doctor 3">Dr. Pradeep B. Tiwari <small>(Diagnosis)</small></option>
+          </select><br>
+          <span id="span9" style="color: green;"></span>
+          <div class="validate"></div>
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"
+          id="africa"></textarea><br>
+        <span id="span10" style="color: green;"></span>
+        <div class="validate"></div>
+      </div>
+      <!-- <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+          </div> -->
+      <div class="text-center mt-4"><button onclick="change_me()" class="btn btn-primary p-2">Make an
+          Appointment</button></div>
+      <!-- </form> -->
+
+    </div>
+  </section><!-- End Appointment Section -->
+
+
+</main><!-- End #main -->
+
+{% endblock 'body' %}

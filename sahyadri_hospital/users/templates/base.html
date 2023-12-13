@@ -1,0 +1,240 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sahyadri Super Speciality Hospital</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medilab
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:contactinfo@visit.com">contactinfo@visit.com</a>
+        <i class="bi bi-telephone"></i> +020 5589 55488 55
+        <i class="bi bi-phone"></i>+91 5547 1255 99
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="https://twitter.com" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="{% url 'index' %}">Sahyadri Super Speciality Hospital</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="{% url 'index' %}">HOME</a></li>
+          <li class="dropdown"><a href="#"><span>ABOUT US</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Sahyadri Super Speciality Hospital Group</a></li>
+              <li><a href="#">About Hospital</a></li>
+              <li><a href="#">Our Values</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>CARE CENTER</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Dental</a></li>
+              <li><a href="#">Cardiology</a></li>
+              <li><a href="#">Diagnosis</a></li>
+              <li><a href="#">Neurosurgeon</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>PATIENTS & VISITORS</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Patients</li>
+              <li><a href="{% url 'doctormac' %}" class="dropdown-list">Find a Doctor</a></li>
+              <li><a href="{% url 'jack' %}" class="dropdown-list">Appointment</a></li>
+              <li><a href="#" class="dropdown-list">Registration</a></li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-header">Visitors</li>
+              <li><a href="#" class="dropdown-list">Timing</a></li>
+              <li><a href="#" class="dropdown-list">Rules</a></li>
+              <li><a href="#" class="dropdown-list">Virtual Tour</a></li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-header">Facilities</li>
+              <li><a href="#" class="dropdown-list">Room Types</a></li>
+              <li><a href="{% url 'gallery' %}" class="dropdown-list">Gallery</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>ACADEMICS & JOBS</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Vacancy / Job's</li>
+              <li class="dropdown-divider"></li>
+              <li><a href="#" class="dropdown-list">Vacancy / Job's</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'contact' %}">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Marquee -->
+    
+    <div>
+      <marquee id="MainContent_meg" class="mt-1">Sahyadri Super Speciality Hospital Pune offers FREE LUNG CHECKUP CAMP If you are suffering from any breathing related problems or if a known case of any lung disease, asthma or smoker can avail.25% discount on surgery/procedures/tests advised during camp on 20th and 27th August. Time 10 AM to 01 PM ph-02250666777
+      </marquee>
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+
+
+
+
+  <!-- dynamic part start -->
+
+  {% block 'body' %}
+
+  {% endblock 'body'%}
+  <!-- dynamic part end -->
+
+
+
+
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h3>Sahyadri Super Speciality Hospital</h3>
+            <p>Sahyadri Super Speciality Hospital,<br>
+              Deccan Gymkhana, Pune Plot No. 30-C,<br>
+              Erandvane, Karve Rd, Deccan Gymkhana,<br>
+              Pune, Maharashtra 411004
+              <br>
+              <strong>Email:</strong> contactinfo@visit.com<br>
+              <strong>Telephone:</strong> +020 5589 55488 55<br>
+              <strong>Phone:</strong> +91 5547 1255 99<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Care Center</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Dental</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Cardiology</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Diagnosis</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Neurology</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <div>
+              <iframe style="border:0; width: 100%; height: 250px;"
+                src="https://maps.google.com/maps?q=Sahyadri+Super+Speciality+Hospital%2C+Deccan+Gymkhana%2C+Pune+Plot+No.+30-C%2C+Erandvane%2C+Karve+Rd%2C+Deccan+Gymkhana%2C+Pune%2C+Maharashtra+411004&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <!-- <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits"> -->
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div> -->
+      </div>
+      <div class="social-links text-center text-md-right pt-0 pt-md-0 pb-3">
+        <a href="https://twitter.com" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+        <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
